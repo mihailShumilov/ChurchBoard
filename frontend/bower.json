@@ -1,0 +1,55 @@
+{
+  "name": "timeshare",
+  "version": "1.0.0",
+  "authors": [
+    "awMinor"
+  ],
+  "description": "timeshare",
+  "keywords": [
+    "AngularJS",
+    "admin"
+  ],
+  "license": "timeshare",
+  "homepage": "www.example.org",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.3.11",
+    "angular-sanitize": "~1.3.11",
+    "angular-ui-router": "*",
+    "oclazyload": "~0.5.1",
+    "jquery": "~2.1.3",
+    "angular-bootstrap": "*",
+    "angular-touch": "*",
+    "font-awesome": "*",
+    "simple-line-icons": "*",
+    "jquery.uniform": "2.1.2",
+    "respond": "*",
+    "excanvas": "*",
+    "jquery-migrate": "*",
+    "jquery-slimscroll": "*",
+    "blockui": "*",
+    "jquery.cookie": "*",
+    "bootstrap": "~3.3.0",
+    "bootstrap-hover-dropdown": "*",
+    "morrisjs": "*",
+    "jquery.sparkline": "*",
+    "restangular": "1.5.1",
+    "datatables":"*",
+    "datatables-colreorder":"*",
+    "select2":"*",
+    "angular-confirm-modal":"*"
+  },
+  "resolutions": {
+    "angular": "~1.3.11",
+    "angular-touch": "~1.3.11",
+    "angular-sanitize": "~1.3.11",
+    "jquery": "~2.1.3"
+  }
+}

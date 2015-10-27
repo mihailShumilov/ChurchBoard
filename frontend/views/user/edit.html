@@ -1,0 +1,52 @@
+<!-- BEGIN PAGE BREADCRUMB -->
+<ul class="page-breadcrumb breadcrumb hide">
+    <li>
+        <a ui-sref="app.dashboard">Home</a><i class="fa fa-circle"></i>
+    </li>
+    <li class="active">
+        User
+    </li>
+</ul>
+<!-- END PAGE BREADCRUMB -->
+<!-- BEGIN MAIN CONTENT -->
+<div class="margin-top-10">
+    <div class="row">
+        <div class="col-md-12 col-sm-12">
+            <div class="portlet light ">
+                <form role="form" class="form-validation">
+                    <div class="form-group">
+                        <label>Enter your username </label>
+                        <input type="text" class="form-control" ng-model="user.username" placeholder="Username"
+                               required>
+                    </div>
+                    <div class="form-group">
+                        <label>Enter your email address </label>
+                        <input type="email" class="form-control" ng-model="user.email" placeholder="Email" disabled>
+                    </div>
+                    <div class="form-group">
+                        <label>Role</label>
+                        <select ng-model="credentials.role">
+                            <option ng-repeat="role in roles" value="{{role.name}}">{{role.description}}</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Permissions</label>
+                        <div ng-repeat="permission in permissions">
+                            <label>
+                                <input
+                                        type="checkbox"
+                                        ng-true-value="1"
+                                        ng-false-value="0"
+                                        ng-model="credentials.permissions[permission.name]"
+                                        ng-change="cleanRole()"
+                                        />
+                                {{permission.description}}
+                            </label>
+                        </div>
+                    </div>
+                    <button class="btn btn-sm btn-primary" ng-click="update()">Update</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

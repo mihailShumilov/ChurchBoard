@@ -1,0 +1,51 @@
+<div class="page-sidebar navbar-collapse collapse">
+	<!-- BEGIN SIDEBAR MENU -->
+	<!-- DOC: Apply "page-sidebar-menu-light" class right after "page-sidebar-menu" to enable light sidebar menu style(without borders) -->
+	<!-- DOC: Apply "page-sidebar-menu-hover-submenu" class right after "page-sidebar-menu" to enable hoverable(hover vs accordion) sub menu mode -->
+	<!-- DOC: Apply "page-sidebar-menu-closed" class right after "page-sidebar-menu" to collapse("page-sidebar-closed" class must be applied to the body element) the sidebar sub menu mode -->
+	<!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+	<!-- DOC: Set data-keep-expand="true" to keep the submenues expanded -->
+	<!-- DOC: Set data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+	<ul class="page-sidebar-menu" data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200" ng-class="{'page-sidebar-menu-closed': settings.layout.pageSidebarClosed}">
+		<li class="heading">
+			<h3>GENERAL</h3>
+		</li>
+		<li class="start">
+			<a href="#/app/dashboard" ui-sref="app.dashboard">
+			<i class="icon-home"></i>
+			<span class="title">Dashboard</span>
+			</a>
+		</li>
+		<li ng-if="isAllowed('user:list')">
+			<a href="#/app/user" ui-sref="app.user">
+			<i class="icon-user"></i>
+			<span class="title">User</span>
+			</a>
+		</li>
+		<li ng-if="isAllowed('resort_network:list')">
+			<a href="#/app/resortNetwork" ui-sref="app.resortNetwork">
+			<i class="icon-check"></i>
+			<span class="title">Resort Network</span>
+			</a>
+		</li>
+		<li ng-if="isAllowed('resort:list')">
+			<a href="#/app/resort" ui-sref="app.resort">
+			<i class="icon-paper-plane"></i>
+			<span class="title">Resort</span>
+			</a>
+		</li>
+		<li ng-if="isAllowed('inventory:list')">
+			<a href="#/app/inventory" ui-sref="app.inventory">
+			<i class="icon-paper-plane"></i>
+			<span class="title">Inventory</span>
+			</a>
+		</li>
+		<li ng-if="isAllowed('rbac_role:list')">
+			<a href="#/app/role" ui-sref="app.role">
+				<i class="icon-paper-plane"></i>
+				<span class="title">Roles</span>
+			</a>
+		</li>
+	</ul>
+	<!-- END SIDEBAR MENU -->
+</div>	

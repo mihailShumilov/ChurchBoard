@@ -1,0 +1,24 @@
+<!-- BEGIN HEADER -->
+<div data-ng-include="'tpl/header.html'" data-ng-controller="HeaderController" class="page-header navbar navbar-fixed-top">
+</div>
+<!-- END HEADER -->
+
+<div class="clearfix">
+</div>
+
+<!-- BEGIN CONTAINER -->
+<div class="page-container">
+    <div class="page-content-wrapper">
+        <div class="page-content">
+            <!-- BEGIN ACTUAL CONTENT -->
+            <div ui-view class="fade-in-up">
+            </div>
+            <!-- END ACTUAL CONTENT -->
+        </div>
+    </div>
+</div>
+<!-- END CONTAINER -->
+
+<!-- BEGIN FOOTER -->
+<div data-ng-include="'tpl/footer.html'" data-ng-controller="FooterController" class="page-footer">
+</div>

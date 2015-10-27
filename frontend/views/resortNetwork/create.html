@@ -1,0 +1,27 @@
+<!-- BEGIN PAGE BREADCRUMB -->
+<ul class="page-breadcrumb breadcrumb hide">
+    <li>
+        <a ui-sref="app.dashboard">Home</a><i class="fa fa-circle"></i>
+    </li>
+    <li class="active">
+        User
+    </li>
+</ul>
+<!-- END PAGE BREADCRUMB -->
+<!-- BEGIN MAIN CONTENT -->
+<div class="margin-top-10">
+    <div class="row">
+        <div class="col-md-12 col-sm-12">
+            <div class="portlet light ">
+                <form role="form" class="form-validation">
+                    <div class="form-group">
+                        <label>Name </label>
+                        <input type="text" class="form-control" ng-model="item.name" placeholder="Name"
+                               required>
+                    </div>
+                    <button class="btn btn-sm btn-primary" ng-click="create()">Create</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
